@@ -1,0 +1,38 @@
+
+//YOU CAN ADD MORE IMPORTS, BUT DO NOT REMOVE
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * **************************************
+ * DO NOT EDIT THE FOLLOWING CLASS NAME *
+ * **************************************
+ */
+class MaxPlotArea {
+
+    /*
+     * *****************************************
+     * DO NOT CHANGE THE FOLLOWING METHOD NAME *
+     * *****************************************
+     */
+    public int maxPlotArea(int input[]){
+        int maxArea = -1;
+        //YOUR CODE STARTS HERE
+       int small=input[0];
+       int l=input.length;
+       for(int i=0;i<l;i++)
+       {
+           
+           if(small>input[i])
+           {
+               small=input[i];
+           }
+       }
+       maxArea=small*10*l;
+        //YOUR CODE ENDS HERE
+        return maxArea;
+    }
+}
